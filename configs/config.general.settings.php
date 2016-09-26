@@ -2,7 +2,7 @@
 ####################################################################
 #	File Name	:	config.general.settings
 #	Author		:	Brian Cai
-#	Location	: 	FMS/configs
+#	Location	: 	WEBROOT/configs
 #	Description	:	Includes the required configuration settings
 ####################################################################
 
@@ -16,5 +16,5 @@ define("BROWSER_PUBLIC_IP", $_SERVER['REMOTE_ADDR']);
 define("SMTP_HOST", "");
 define("SMTP_PORT", "");
 define("SMTP_USER", "");
-define("SMTP_PWD", 'p');
+define("SMTP_PWD", '');
 ?>
