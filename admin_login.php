@@ -1,9 +1,8 @@
 <?php
 ####################################################################
 # File Name : admin_login.php
-# Location  : /webroot/FMS/
+# Location  : /webroot
 ####################################################################
-
 require "templates/admin_login_header.php";
 
 ?>
@@ -38,18 +37,18 @@ require "templates/admin_login_header.php";
                    
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="user" type="text" class="form-control" name="user" value="" placeholder="User">                                        
+                        <input id="loginName" type="text" class="form-control" name="loginName" value="" placeholder="User">                                        
                     </div>
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                        <input id="loginPwd" type="password" class="form-control" name="loginPwd" placeholder="Password">
                     </div>                                                                  
 
                     <div class="form-group">
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Log in</button>                          
+                            <button type="submit" href="#" class="btn btn-primary pull-right" id="loginLink"><i class="glyphicon glyphicon-log-in"></i> Log in</button>                          
                         </div>
                     </div>
 

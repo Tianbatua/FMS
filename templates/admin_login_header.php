@@ -1,9 +1,54 @@
+<?php
+####################################################################
+#	File Name	:	admin_login_header.php
+#	Location	:	/webroot/templates/
+####################################################################
+
+//ob_start();
+session_start();
+//error_reporting(E_ALL);
+//ini_set("dispay_errors", "on");
+
+require ("configs/config.general.settings.php");
+require ("configs/config.url.settings.php");
+//require ("../classes/class.general_utils.php");
+require ("configs/config.dbase.settings.php");
+
+require ("classes/class.log.php");
+require ("classes/class.main.php");
+//require ("../classes/class.smtp.php"); # SMTP
+//require ("../classes/class.phpmailer.php"); # PHP MAILER
+//require ("../classes/class.mail.templates.php"); # MAIL TEMPLATES
+
+
+
+$dbObj  		=	new cdBConnect;
+$connect		=	$dbObj->connectDB();
+$logObj = new logClass();
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_fms";
+
+$now=time();
+
+if(isset($_SESSION['FMS'])) {
+
+    $logObj->printLog($_SESSION['FMS']['USER_ID']);	
+	header("Location: admin_home.php");
+	
+}
+
+?>
+
+
 <!DOCTYPE html>
 
 <head>
      <meta charset="utf-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-     <meta name="description" content="Bless Us's Admin Control Panel" />
+     <meta name="description" content="Bless Admin Control Panel" />
      <meta name="author" content="Brian Cai" />
      <title>FMS Admin</title>
      <!-- BOOTSTRAP CORE STYLE  -->

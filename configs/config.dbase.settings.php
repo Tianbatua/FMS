@@ -6,7 +6,7 @@
 #	Description	:	Includes the required configuration settings
 ####################################################################
 
-interface iDBaseConfig
+interface dbConfig
 {
     const DBTYPE        =   "mysql";
     const DBHOST        =   "localhost";
@@ -24,13 +24,13 @@ class cdBConfig implements dbConfig
 {
     public function __construct()
     {
-		$this->dBType		=	iDBaseConfig::DBTYPE;
-		$this->dBHost		=	iDBaseConfig::DBHOST;
-		$this->tblPrefix	=	iDBaseConfig::TBLPREFIX;
-		$this->dBUsr		=	iDBaseConfig::DBUSER;
-		$this->dBPwd		=	iDBaseConfig::DBPWD;
-		$this->dBCharSet	=	iDBaseConfig::DBCHARSET;
-		$this->dbName		=	iDBaseConfig::DBNAME;
+		$this->dBType		=	dbConfig::DBTYPE;
+		$this->dBHost		=	dbConfig::DBHOST;
+		$this->tblPrefix	=	dbConfig::TBLPREFIX;
+		$this->dBUsr		=	dbConfig::DBUSER;
+		$this->dBPwd		=	dbConfig::DBPWD;
+		$this->dBCharSet	=	dbConfig::DBCHARSET;
+		$this->dbName		=	dbConfig::DBNAME;
 		
 		$this->conObj		=	 "";
 		$this->conString	=	 "";
