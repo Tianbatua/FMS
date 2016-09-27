@@ -26,15 +26,12 @@ $dbObj  		=	new cdBConnect;
 $connect		=	$dbObj->connectDB();
 $logObj = new logClass();
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_fms";
+
 
 $now=time();
 
-if(isset($_SESSION['FMS'])) {
 
+if(isset($_SESSION['FMS'])) {
     $logObj->printLog($_SESSION['FMS']['USER_ID']);	
 	header("Location: admin_home.php");
 	
@@ -52,10 +49,11 @@ if(isset($_SESSION['FMS'])) {
      <meta name="author" content="Brian Cai" />
      <title>FMS Admin</title>
      <!-- BOOTSTRAP CORE STYLE  -->
+
+
      <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
      <link href="assets/css/admin_login.css" rel="stylesheet"/>
-     <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
-     <script type="text/javascript" src="assets/js/admin_login.js"></script>
+
 
 </head>
 <body>

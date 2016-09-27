@@ -48,7 +48,7 @@ require "templates/admin_login_header.php";
                     <div class="form-group">
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <button type="submit" href="#" class="btn btn-primary pull-right" id="loginLink"><i class="glyphicon glyphicon-log-in"></i> Log in</button>                          
+                            <button type="submit" class="btn btn-primary pull-right" id="loginLink"><i class="glyphicon glyphicon-log-in"></i> Log in</button>                          
                         </div>
                     </div>
 
@@ -306,3 +306,5 @@ require "templates/admin_login_header.php";
   c-0.049-0.366-0.046-0.739-0.025-1.11c0.009-0.125,0.024-0.25,0.042-0.375C12.122,17.814,12.141,17.732,12.164,17.65z"></path>
   </g>
 </svg>
+
+<?php require "templates/admin_login_footer.php"; ?>

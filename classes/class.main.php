@@ -12,7 +12,7 @@ if (!defined('DOC_ROOT'))
 if (!defined('ERR_LOG_FILE'))
  	define("ERR_LOG_FILE", DOC_ROOT."err_log.txt");
 
- class dBaseClass
+ class dbClass
  {
 	 
 	 /**********************************************************************
@@ -47,8 +47,7 @@ if (!defined('ERR_LOG_FILE'))
 			$errorMessage	.=	"\n FILE :".$e->getFile();
 			$errorMessage	.=	"\n LINE :".$e->getLine();
 			
-			$fileContents 	= file_get_contents(ERR_LOG_FILE);
-			file_put_contents(ERR_LOG_FILE, $errorMessage.$fileContents);
+			logClass::printLog($errorMessage);
 			//error_log($errorMessage, 3, ERR_LOG_FILE);
 		}
 		
@@ -196,9 +195,7 @@ if (!defined('ERR_LOG_FILE'))
 			$errorMessage	.=	"\n FILE :".$e->getFile();
 			$errorMessage	.=	"\n LINE :".$e->getLine();
 			
-			$fileContents 	= file_get_contents(ERR_LOG_FILE);
-			file_put_contents(ERR_LOG_FILE, $errorMessage.$fileContents);
-			//error_log($errorMessage, 3, ERR_LOG_FILE);
+			logClass::printLog($errorMessage);
 		  }
 		
 		if($resultCount)
