@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$('#loginLink').click(function(){	
+		event.preventDefault();
 		processSecureLogin(13);	
+		
 	});
 
 	$("#form input").keypress(function(e) {
@@ -11,12 +13,12 @@ $(document).ready(function() {
 	});
 
 	/* Simple VanillaJS to toggle class */
-// 	document.getElementById('toggleProfile').addEventListener('click', function () {
-// 	  [].map.call(document.querySelectorAll('.profile'), function(el) {
-// 	    el.classList.toggle('profile--open');
-// 	  });
-// 	});
-// });
+	// document.getElementById('toggleProfile').addEventListener('click', function () {
+	//   [].map.call(document.querySelectorAll('.profile'), function(el) {
+	//     el.classList.toggle('profile--open');
+	//   });
+	// });
+});
 
 function processSecureLogin(keycode) {
 	if(keycode == 13) {
@@ -47,6 +49,7 @@ function processSecureLogin(keycode) {
 				data: $("#form").serialize() + "&op_command=SECURE_LOGIN",
 				success: function(ajaxResponse) {	
 					var loginResponse	=	($.trim(ajaxResponse));
+					
 					if(loginResponse == 'SUCCESS') {
 						alert("login success");
 						$(location).attr('href', 'admin_home.php');
