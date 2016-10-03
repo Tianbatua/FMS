@@ -31,11 +31,19 @@ $logObj = new logClass();
 $now=time();
 
 
+<<<<<<< HEAD
 // if(isset($_SESSION['FMS'])) {
 //     $logObj->printLog($_SESSION['FMS']['USER_ID']);	
 // 	header("Location: admin_home.php");
 	
 // }
+=======
+if(isset($_SESSION['FMS'])) {
+    $logObj->printLog($_SESSION['FMS']['USER_ID']);	
+	header("Location: admin_home.php");
+	
+}
+>>>>>>> 35415fc59dcbc37f70fa51090118fd6248b3102d
 
 ?>
 
