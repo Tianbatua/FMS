@@ -1,0 +1,55 @@
+Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '114074c8c199606926a5ac59fbdeb669') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '1c72caa48f50f53663dd4dea02e1b6c5') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '55d5eb54e72a75e4b8ca0502de341e5a') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '830f8aab7364343ce9e43fc0e5555f57') Successfully authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '77e2edcc9b40441200e31dc57dbb8829') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'c3284d0f94606de1fd2af172aba15bf3') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '343fef851afe404d85f3f1b0a5d6f706') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '0e88ca82ab11c60ce78ba3b2fff0ce95') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '0e728c3eab178cc2e81c98c2addf973c') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'd072b5e65ce84d661f3c39fa3baa7f12') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'c2750d03fb27d60d115c61dad156953b') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'e7043ca832e612e96b433b088febb88f') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '63f1d5120250b6b88239db8b1458fa31') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '149f7639ad2a1ae111d3d2a809b57112') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '6d01d6f13e0003728ba48739efe504eb') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '687fb677c784ce2a0b273263bfe778be') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '4c14a808735abb4b205d1c8cb54ec845') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'da146e60619d5e8252c3c67597a566eb') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '67f43efc5701784db1504e4993d7e393') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '6ad4664ba23eac71b5ef5e826ea0c6cd') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '77e2edcc9b40441200e31dc57dbb8829') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'c3284d0f94606de1fd2af172aba15bf3') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') mingcan
+mingcan
+mingcan
+mingcan
+Successfully authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '77e2edcc9b40441200e31dc57dbb8829') Failed authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'c3284d0f94606de1fd2af172aba15bf3') Successfully authenticate user!
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') Failed authenticate user!
+
+***************************************
+ Error Date :Oct-1-2016 Sat, 03:13:16 PM
+ Error While executing  SELECT Query Over :tbl_users
+ QUERY :: SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'c3284d0f94606de1fd2af172aba15bf3') 
+ MESSAGE :SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_fms.tbl_users' doesn't exist
+ CODE :42S02
+ FILE :/Users/Cynthia-Love-Cai/github/FMS/classes/class.main.php
+ LINE :183
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = 'c3284d0f94606de1fd2af172aba15bf3') Failed authenticate user!
+
+***************************************
+ Error Date :Oct-1-2016 Sat, 03:13:13 PM
+ Error While executing  SELECT Query Over :tbl_users
+ QUERY :: SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') 
+ MESSAGE :SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_fms.tbl_users' doesn't exist
+ CODE :42S02
+ FILE :/Users/Cynthia-Love-Cai/github/FMS/classes/class.main.php
+ LINE :183
+SELECT * FROM tbl_users WHERE (name = 'mingcan' AND password  = '21232f297a57a5a743894a0e4a801fc3') 

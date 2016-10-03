@@ -178,7 +178,8 @@ if (!defined('ERR_LOG_FILE'))
 				//error_log($queryString, 3, ERR_LOG_FILE);
 				
 				$preparedStatement	=	$pdoConObj->prepare($queryString);
-				
+				$fileContents 	= file_get_contents(ERR_LOG_FILE);
+				file_put_contents(ERR_LOG_FILE, $queryString.$fileContents);
 				$preparedStatement->execute();
 				
 				$resultCount	=	$preparedStatement->rowCount();

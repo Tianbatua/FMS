@@ -43,19 +43,23 @@ function processSecureLogin(keycode) {
 			var encPwd 		=	$.md5(plainPwd);
 			$("#loginPwd").val(encPwd);			
 			console.log($("#form").serialize());
+			
 			$.ajax({
 				type: "POST",
 				url: "ajax/ajax_secureLogin.php",
 				data: $("#form").serialize() + "&op_command=SECURE_LOGIN",
 				success: function(ajaxResponse) {	
+					console.log(ajaxResponse);
 					var loginResponse	=	($.trim(ajaxResponse));
-					
 					if(loginResponse == 'SUCCESS') {
 						alert("login success");
 						$(location).attr('href', 'admin_home.php');
 					} else {
 						//...
 					}
+				},
+				error: function(e) {
+					console.log("err-->".e);
 				}
 			});	//ajax
 		} else {

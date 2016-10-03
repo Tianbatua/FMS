@@ -30,13 +30,12 @@ if(isset($_POST['op_command']) && $_POST['op_command'] == "SECURE_LOGIN") {
 
 	$loginName			=	$_POST['loginName'];
 	$loginPwd			=	$_POST['loginPwd'];
+
 	$targetSchema		=	"users";
 	$loginCondition		=	"(name = '".$loginName."' AND password  = '".$loginPwd."')";
 	$checkAvailInfo		=	$mainClassObj->getSchemaInfo($targetSchema, "*", $loginCondition, "", "", "", "");
 	
 	$availCount			=	sizeof($checkAvailInfo);
-
-
 
 
 	if($availCount == 1) {
