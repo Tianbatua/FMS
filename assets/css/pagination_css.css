@@ -1,0 +1,34 @@
+#results{font:12px Arial, Helvetica, sans-serif;width:400px;margin-left:auto;margin-right:auto;}
+#results .loading-indication{background:#FFF;position:absolute;padding:10px;}
+.paginate{height:30px;display:block;text-align:right;margin:10px 0 0 0;padding:0;}
+.paginate{ float:right;}
+.paginate li{ float:left; display:block;}
+.paginate li a{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;background:#4E4E4E;line-height:25px;padding:0; border-radius:5px; color:#FFF;text-decoration:none;}
+.paginate .active{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;line-height:25px;background-color:#067FAE;padding:0;  border-radius:5px;}
+.paginate li a:hover{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;line-height:25px;background-color:#067FAE;padding:0;  border-radius:5px;}
+
+.page_result{padding:0;}
+.page_result li{background:#E4E4E4;margin-bottom:5px;font-size:12px;list-style:none;padding:10px;}
+.page_result .page_name{font-size:14px;font-weight:700;margin-right:5px;}
+
+
+
+.paginate_browse{height:30px;display:block;text-align:right;margin:10px 0 0 0;padding:0;}
+.paginate_browse{ float:right;}
+.paginate_browse li{ float:left; display:block;}
+.paginate_browse li a{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;background:#4E4E4E;line-height:25px;padding:0; border-radius:5px; color:#FFF;text-decoration:none;}
+.paginate_browse .active{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;line-height:25px;background-color:#067FAE;padding:0;  border-radius:5px;}
+.paginate_browse li a:hover{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;line-height:25px;background-color:#067FAE;padding:0;  border-radius:5px;}
+
+
+
+.paginate_invi{height:30px;display:block;text-align:right;margin:10px 0 0 0;padding:0;}
+.paginate_invi{ float:right;}
+.paginate_invi li{ float:left; display:block;}
+.paginate_invi li a{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;background:#4E4E4E;line-height:25px;padding:0; border-radius:5px; color:#FFF;text-decoration:none;}
+.paginate_invi .active{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;line-height:25px;background-color:#067FAE;padding:0;  border-radius:5px;}
+.paginate_invi li a:hover{display:inline-block;list-style:none;margin-right:1px;width:30px;text-align:center;line-height:25px;background-color:#067FAE;padding:0;  border-radius:5px;}
+
+
+
+
